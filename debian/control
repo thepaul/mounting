@@ -1,0 +1,14 @@
+Source: python-mounting
+Section: python
+Priority: optional
+Maintainer: paul cannon <pik@debian.org>
+Build-Depends-Indep: debhelper (>= 5.0.37.2), cdbs (>= 0.4.43), python-central (>= 0.5), python-all-dev (>= 2.3.5-11)
+Standards-Version: 3.7.2
+XS-Python-Version: current, >= 2.4
+
+Package: python-mounting
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-ctypes
+XB-Python-Version: ${python:Versions}
+Description: Library for doing mount operations with the mount binary
+ Yeah.
